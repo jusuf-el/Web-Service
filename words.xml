@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<words>
+	<word id="w1">
+      		<bs>Knjiga</bs>
+      		<en>Book</en>
+      		<tr>Kitap</tr>
+   	</word>
+	<word id="w2">
+      		<bs>Kuća</bs>
+      		<en>House</en>
+      		<tr>Ev</tr>
+   	</word>
+	<word id="w3">
+      		<bs>Automobil</bs>
+      		<en>Car</en>
+      		<tr>Araba</tr>
+   	</word>
+	<word id="w4">
+      		<bs>Sveska</bs>
+      		<en>Notebook</en>
+      		<tr>Defter</tr>
+   	</word>
+	<word id="w5">
+      		<bs>Škola</bs>
+      		<en>School</en>
+      		<tr>Okul</tr>
+   	</word>
+</words>

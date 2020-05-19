@@ -1,0 +1,34 @@
+!!! Fajl words.xml (fajl sa rijeèima) je bilo potrebno smjestiti na sljedeæu putanju:
+	C:\Users\jusuf\AppData\Roaming\NetBeans\8.2\config\GF_4.1.1\domain1\config !!!
+
+--- U P U T S T V O ---
+
+1. Opis words.xml fajla
+	U fajlu se nalazi pet rijeèi na tri jezika: Bosanski (bs), Engleski (en) i Turski (tr). 
+	Rijeèi na Bosanskom jeziku su: Knjiga, Kuæa, Automobil, Sveska, Škola.
+	Rijeèi na Engleskom jeziku su: Book, House, Car, Notebook, School.
+	Rijeèi na Turskom jeziku su: Kitap, Ev, Araba, Defter, Okul.
+	Bitno je napomenuti da sve rijeèi u fajlu poèinju velikim slovom, što je jaok bitno za kasniju 
+	upotrebu servisa.
+
+2. Pokretanje i upotreba servisa
+	Kada se pokrene projekat u NetBeans-u, automatksi se otvara browser na sljedeæoj putanji:
+		http://localhost:8080/Translator/
+	Da bi se poslala rijeè na server i da bi se dobila prevedena rijeè, potrebno je izmijeniti putanju 
+	na sljedeæi naèin:
+		http://localhost:8080/Translator/resource/TranslateService/Okul/tr/en
+	Ova putanja æe na prozoru browsera ispisati 
+		School
+	što je prijevod rijeèi Okul sa Turskog jezika.
+	Dakle zadnja tri dijela putanje su:
+		1)Rijeè koju je potrebno prevesti (u primjeru rijeè "Okul")
+		2)Oznaka jezika izvorne rijeèi, tj. jezik na kojem je rijeè unesena na mjesto prvog parametra, 
+			mora biti proslijeðen kao vrijednost drugog parametra (u primjeru je Turski jezik 
+			èija je oznaka "tr")
+		3)Oznaka jezika na koji želite da prevedete izvornu rijeè (u primjeru je Engleski jezik cija je
+			oznaka "en")
+
+3. Moguæe greške tokom korištenja servisa
+	Kako je veæ reèeno, sve rijeèi poèinju velikim slovom, tako da je željenu rijeè potrebno proslijediti 
+	na taj naèin. Ukoliko proslijedite "school" umjesto "School", dobit æete poruku da rijeè ne postoji u
+	rijeèniku (words.xml).
